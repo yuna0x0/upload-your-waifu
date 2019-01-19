@@ -1,0 +1,22 @@
+{
+    "parent": "..",
+    "path": "",
+    "name": "waifu",
+    "type": "directory",
+    "children": [
+        {
+            "parent": "",
+            "path": "94941",
+            "name": "94941",
+            "type": "directory",
+            "children": [
+                {
+                    "parent": "94941",
+                    "path": "94941\\43560662_p1.jpg",
+                    "name": "43560662_p1.jpg",
+                    "type": "file"
+                }
+            ]
+        }
+    ]
+}

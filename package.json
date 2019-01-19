@@ -1,0 +1,31 @@
+{
+  "name": "upload-your-waifu",
+  "version": "1.0.0",
+  "description": "A repository to learn git easily by uploading your waifu's photo.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonlee55/upload-your-waifu.git"
+  },
+  "keywords": [
+    "upload-your-waifu",
+    "anime",
+    "learning"
+  ],
+  "author": {
+    "name": "Edison Lee",
+    "email": "edisonlee@edisonlee55.com",
+    "url": "https://www.edisonlee55.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edisonlee55/upload-your-waifu/issues",
+    "email": "edisonlee@edisonlee55.com"
+  },
+  "dependencies": {
+    "dir-to-json": "^0.0.3"
+  }
+}

@@ -14,7 +14,8 @@
     <link href="https://cdn.edisonlee55.com/resources/fonts/Avenir.css" rel="stylesheet" type="text/css">
 
     <!-- Add Material CSS, replace Bootstrap CSS -->
-    <link href="css/material.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <!-- Core CSS file -->
     <link rel="stylesheet" href="css/photoswipe.css">
 
@@ -53,29 +54,16 @@
                     <input id="searchID" type="text" class="form-control" placeholder="Your Waifu's MyAnimeList ID"
                         aria-label="Your Waifu's MyAnimeList ID" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button id="submit" class="btn btn-outline-secondary" type="button">Submit</button>
+                        <button id="submit" class="btn btn-primary" type="button">Submit</button>
                     </div>
                 </div>
                 <p id="errorStatus" style="color:red"></p>
                 <div id="photoGallery">
-                    <div id="1234" class="card bg-dark text-white">
-                        <img class="card-img" src="https://cdn.edisonlee55.com/edisonlee55/resources/photo/0cef8f2d-611a-403a-a768-0b1cd8ebfab1.jpg"
-                            alt="Card image">
-                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.7);">
-                            <h5 class="card-title">test.png</h5>
-                        </div>
-                    </div>
-                    <div id="1234" class="card bg-dark text-white">
-                        <img class="card-img" src="https://cdn.edisonlee55.com/edisonlee55/resources/photo/0cef8f2d-611a-403a-a768-0b1cd8ebfab1.jpg"
-                            alt="Card image">
-                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.7);">
-                            <h5 class="card-title">test2.png</h5>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="card-footer">
-                <h2>Learn and Contribute at <a href="https://github.com/edisonlee55/upload-your-waifu"><i class="fab fa-github"></i></a></h2>
+                <h3>Learn and Contribute at <a href="https://github.com/edisonlee55/upload-your-waifu"><i class="fab fa-github"></i></a></h3>
             </div>
         </div>
     </div>
@@ -151,11 +139,12 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-    <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
-    <script src="js/material.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
         crossorigin="anonymous"></script>
@@ -165,6 +154,8 @@
 
     <!-- UI JS file -->
     <script src="js/photoswipe-ui-default.min.js"></script>
+
+    <script src="js/jquery.photoswipe-global.min.js"></script>
 
     <script src="js/main.js"></script>
 </body>

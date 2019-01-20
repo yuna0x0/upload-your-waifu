@@ -12,11 +12,29 @@
             "children": [
                 {
                     "parent": "94941",
-                    "path": "94941\\43560662_p1.jpg",
+                    "path": "94941/.DS_Store",
+                    "name": ".DS_Store",
+                    "type": "file"
+                },
+                {
+                    "parent": "94941",
+                    "path": "94941/43560662_p1.jpg",
                     "name": "43560662_p1.jpg",
+                    "type": "file"
+                },
+                {
+                    "parent": "94941",
+                    "path": "94941/IMG_0715.jpeg",
+                    "name": "IMG_0715.jpeg",
                     "type": "file"
                 }
             ]
+        },
+        {
+            "parent": "",
+            "path": ".DS_Store",
+            "name": ".DS_Store",
+            "type": "file"
         }
     ]
 }

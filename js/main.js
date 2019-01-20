@@ -25,12 +25,12 @@ $("#submit").click(function () {
                 }
             }
             else {
-                $("#errorStatus").text("No pictures found in this ID's Directory! <br> <a href='' style='color: #03a9f4'>Learn and Contribute your waifu's pictures (*'ω'*)</a>");
+                $("#errorStatus").text("No pictures found in this ID's Directory! <br> <a href='https://github.com/edisonlee55/upload-your-waifu' style='color: #03a9f4'>Learn and Contribute your waifu's pictures (*'ω'*)</a>");
             }
             break;
         }
         else {
-            $("#errorStatus").html("Directory with this ID is not found! <br> <a href='' style='color: #03a9f4'>Learn and Contribute your waifu's pictures (*'ω'*)</a>");
+            $("#errorStatus").html("Directory with this ID is not found! <br> <a href='https://github.com/edisonlee55/upload-your-waifu' style='color: #03a9f4'>Learn and Contribute your waifu's pictures (*'ω'*)</a>");
         }
     }
 });

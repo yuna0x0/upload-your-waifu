@@ -3,11 +3,12 @@ $('#photoGallery').photoSwipe();
 $.getJSON("dirTree.json", function (data) {
     dirTree = data;
 });
-
+setInterval(function () {
+    $('#photoGallery').photoSwipe('update');
+}, 300);
 $("#submit").click(function () {
     $("#errorStatus").empty();
     $("#photoGallery").empty();
-    $('#photoGallery').photoSwipe('update');
     var searchID = $("#searchID").val();
     for (var i = 0; i < dirTree.children.length; i++) {
         if (dirTree.children[i].name == searchID) {
@@ -18,10 +19,7 @@ $("#submit").click(function () {
                     }
                     var photoPath = dirTree.children[i].children[j].path;
                     var POSIXphotoPath = photoPath.replace(/\\/g, "/");
-                    $.when($("#photoGallery").append('<div class="card bg-dark text-white"><img id="' + searchID + "-" + j + '" class="card-img" src="waifu/' + POSIXphotoPath + '" alt="Card image"> <div class="card-img-overlay"> <h5 class="card-title" style="background-color: rgba(0, 0, 0, 0.5); margin-left: -20px; margin-right: -20px; margin-top: -20px;">' + dirTree.children[i].children[j].name + '</h5> </div> </div>')).done(function () {
-                        $('#photoGallery').photoSwipe('update');
-                    });
-
+                    $("#photoGallery").append('<hr><img id="' + searchID + "-" + j + '" class="card-img" src="waifu/' + POSIXphotoPath + '" alt="' + dirTree.children[i].children[j].name + '"><p><strong>' + dirTree.children[i].children[j].name + '</<strong></p>');
                 }
             }
             else {

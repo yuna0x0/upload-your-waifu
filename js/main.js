@@ -31,6 +31,9 @@ $("#submit").click(function () {
         window.history.pushState({ path: newurl }, '', newurl);
     }
     for (var i = 0; i < dirTree.children.length; i++) {
+        if (!searchID) {
+            break;
+        }
         if (dirTree.children[i].name == searchID) {
             if (dirTree.children[i].children.length) {
                 for (var j = 0; j < dirTree.children[i].children.length; j++) {
